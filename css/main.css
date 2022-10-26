@@ -1,0 +1,348 @@
+@charset "UTF-8";
+
+/*--------------------------------------------------------------
+    TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
+2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
+3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+        - Universal
+4.0 - Elements: styling for bare/generic HTML elements 
+        - Typography: Headings, Paragraphs, Blockquotes, Anchors
+5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
+        - Framework
+6.0 - Components: specific designed components
+        - Hero
+7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class   
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+    2.0 - TOOLS
+-------------------------------------------------------------- */
+
+
+/*--------------------------------------------------------------
+    3.0 - GENERIC
+-------------------------------------------------------------- */
+
+/* ----------- UNIVERSAL ------------- */
+
+* {
+        font-family: 'Open Sans', 'Arial', sans-serif;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
+    4.0 - ELEMENTS
+-------------------------------------------------------------- */
+
+
+main .row section {
+        width: 310px;
+}
+
+header div:first-child {
+        margin-top: 20px;
+}
+/* ----- TYPOGRAPHY ----- */
+
+h1,
+h1 + p,
+h2,
+h3,
+h4,
+.btn {
+        text-transform: uppercase;
+}
+
+h1,
+h1 + p,
+h4,
+span,
+.btn {
+        color: #ffff;
+}
+
+h3,
+h4 {
+        font-size: 18px;
+}
+
+h1,
+h3,
+h4,
+.btn {
+        font-weight: 700;
+}
+
+p,
+h3 {
+        color: #3F3C45;
+}
+
+p,
+.btn {
+        font-size: 16px;
+}
+
+p {
+        line-height: 25px;
+        margin-top: 0px;
+}
+
+h1 {
+        font-size: 50px;
+        line-height: 63px;
+        margin-bottom: 0;
+}
+
+h1 + p {
+        font-size: 30px;
+        font-weight: 300;
+        margin-top: 0;
+        padding-bottom: 130px;
+}
+
+h3 {
+        margin-bottom: 10px;
+}
+
+h4 {
+        margin-top: 75px;
+}
+
+
+span {
+        font-weight: 600;
+}
+
+
+/* ----- LISTS ----- */
+
+ul {
+        padding-left: 20px;
+}
+
+li {
+        margin-bottom: 20px;
+        line-height: 25px;
+}
+
+/* ----- NAVIGATION ----- */
+
+nav li {
+        display: inline-block;
+}
+
+nav {
+        margin-top: 20px;
+}
+
+/* ----- ANCHORS ----- */
+
+a {
+        text-decoration: none;
+}
+
+a.btn:hover {
+        background-color: #51CCF6;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+        background-color: #4D515C;
+        margin-top: 75px;
+        padding-bottom: 35px;
+}
+
+footer h4 {
+        margin-bottom: 15px;
+}
+
+footer a {
+        color: #B6BCC7;
+        font-size: 14px;
+}
+
+footer a:hover {
+        color: #ffff;
+}
+
+footer li {
+        list-style-type: none;
+        margin-top: 0;
+        margin-bottom: 10px;
+        line-height: 21px;
+}
+
+footer ul {
+        padding-left: 0;
+        margin-top: 0;
+}
+
+footer div {
+        display: flex;
+        justify-content: flex-start;
+}
+
+footer div section {
+        margin-right: 50px;
+}
+
+footer section:last-child li {
+        display: inline-block;
+}
+footer section:nth-child(2) li:nth-child(2) a:hover{
+        color: #FE8360;
+}
+
+footer div section:first-child > h4:first-child {
+        margin-bottom: 25px;
+}
+
+footer ul:last-child a:hover {
+        color: #ffff;
+}
+
+/* ----- IMAGES ----- */
+
+
+#index main > section > div:last-child {
+        background: url("../img/typing.jpg") no-repeat right 12px;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+        height: 380px;
+        width: 754px;
+        margin-left: 100px;
+        margin-right: 100px;
+}
+
+main > section:first-child {
+        margin-bottom: 100px;
+}
+/*--------------------------------------------------------------
+    5.0 - OBJECTS
+-------------------------------------------------------------- */
+
+
+/* ----- FRAMEWORK ----- */
+
+.wrapper {
+        width: 1024px;
+        margin: 0 auto;
+}
+
+.row {
+        display: flex;
+        justify-content: space-between;
+}
+
+/*--------------------------------------------------------------
+    6.0 - COMPONENTS
+-------------------------------------------------------------- */
+
+#index main section div ul {
+        margin-bottom: 75px;
+}
+
+/* ----- FORMS ----- */
+
+
+form div {
+        padding-top: 39px;
+        padding-left: 20px;
+}
+
+#hosting main > div:first-child {
+        background-color: #E7F5F8;
+        padding: 25px 0;
+}
+
+/* ----- BUTTONS ----- */
+
+.btn {
+        background-color: #FE8360;
+        font-family: 'Lato', 'Arial', sans-serif;
+        font-weight: 700;
+        padding: 15px;
+        text-decoration: none;
+        margin: 10px 0;
+}
+
+
+/* ----- HERO ----- */
+
+#index > header > div:last-child {
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background: url("../img/bg-laptop.jpg") no-repeat center;
+        background-size: cover;
+        padding: 300px 0 0;
+        margin-bottom: 120px;
+}
+
+#index h1,
+#index h1 + p {
+        text-align: center;
+}
+
+#benefits > header > div:last-child {
+        background-color: #51CCF6;
+        margin-bottom: 100px;
+}
+
+#hosting > header > div:last-child {
+        background-color: #FE8360;
+}
+
+#benefits h1,
+#hosting h1 {
+        padding: 200px 0 25px 0;
+}
+
+/* ----- ICONS ----- */
+
+
+.fa-facebook-f,
+.fa-instagram,
+.fa-twitter,
+.fa-linkedin-in {
+        color: #B6BCC7;
+        font-size: 14px;
+        font-weight: 400;
+}
+
+.fa-compass-drafting,
+.fa-pen-to-square,
+.fa-champagne-glasses,
+.fa-cloud,
+.fa-comment,
+.fa-laptop,
+.fa-gear,
+.fa-envelope,
+.fa-lock,
+.fa-certificate {
+        font-size: 50px;
+        color: #FE8360;
+        margin: 20px 50px 0 0;
+}
+
+.fa-magnifying-glass {
+        color: #FE8360;
+}
+
+
+/*--------------------------------------------------------------
+    7.0 - UTILITIES
+-------------------------------------------------------------- */
+
