@@ -41,14 +41,6 @@
 -------------------------------------------------------------- */
 
 
-main .row section {
-        width: 310px;
-}
-
-header div:first-child {
-        margin-top: 20px;
-}
-
 /* ----- TYPOGRAPHY ----- */
 
 h1,
@@ -66,45 +58,10 @@ span,
         color: #ffff;
 }
 
-#home-page p {
-        color: #ffff;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 63px;
-        margin-bottom: 0;
-        margin-top: 0;
-        padding-bottom: 130px;
-}
-
-#home-page span {
-        font-size: 30px;
-        font-weight: 300;
-        margin-top: 0;
-        padding-bottom: 130px;
-}
-
-
-footer h3 {
-        font-size: 18px;
-}
-
-.header-style {
-        font-size: 18px;
-        text-transform: uppercase;
-        color: #3F3C45;
-        margin-bottom: 10px;
-        font-weight: 700;
-}
-
 h1,
 footer h3,
 .btn {
         font-weight: 700;
-}
-
-p {
-        color: #3F3C45;
 }
 
 p,
@@ -113,6 +70,7 @@ p,
 }
 
 p {
+        color: #3F3C45;
         line-height: 25px;
         margin-top: 0px;
 }
@@ -121,14 +79,18 @@ h1 {
         font-size: 50px;
         line-height: 63px;
         margin-bottom: 0;
+        margin-top: 0;
 }
-
-footer h3 {
-        margin-top: 75px;
-}
-
 
 span {
+        font-weight: 300;
+}
+
+h2 span {
+        font-size: 18px;
+}
+
+footer span {
         font-weight: 600;
 }
 
@@ -140,29 +102,29 @@ ul {
 }
 
 li {
-        margin-bottom: 20px;
-        line-height: 25px;
+                line-height: 25px;
 }
 
 /* ----- NAVIGATION ----- */
+
+nav {
+        margin-top: 20px;
+        width: 295px;
+}
+
+nav ul {
+        padding: 0;
+        background-color: #FE8360;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+        width: 295px;
+}
 
 nav li {
         display: inline-block;
 }
 
-nav {
-        margin-top: 20px;
-}
-
-/* ----- ANCHORS ----- */
-
-a {
-        text-decoration: none;
-}
-
-a.btn:hover {
-        background-color: #51CCF6;
-}
 
 /* ----- FOOTER ----- */
 
@@ -174,15 +136,23 @@ footer {
 
 footer h3 {
         margin-bottom: 15px;
+        margin-top: 75px;
+        font-size: 18px;
 }
 
 footer a {
         color: #B6BCC7;
         font-size: 14px;
+        text-transform: none;
+        background-color: #4D515C;
+        padding: 0;
+        font-weight: 400;
 }
 
 footer a:hover {
         color: #ffff;
+        padding: 0;
+        background-color: #4D515C;
 }
 
 footer li {
@@ -209,7 +179,8 @@ footer div section {
 footer section:last-child li {
         display: inline-block;
 }
-footer section:nth-child(2) li:nth-child(2) a:hover{
+
+footer section:nth-child(2) li:nth-child(2) a:hover {
         color: #FE8360;
 }
 
@@ -224,15 +195,15 @@ footer ul:last-child a:hover {
 /* ----- IMAGES ----- */
 
 #optimized-hosting > div:last-child {
-        background: url("../img/typing.jpg") no-repeat right 12px;
+        background: url("../img/typing.jpg") no-repeat right 53px;
+        background-size: auto;
         -moz-background-size: cover;
         -webkit-background-size: cover;
         -o-background-size: cover;
         -ms-background-size: cover;
         background-size: cover;
         height: 380px;
-        width: 754px;
-        margin-left: 100px;
+        width: 600px;
         margin-right: 100px;
 }
 
@@ -240,17 +211,21 @@ footer ul:last-child a:hover {
         position: relative;
         width: 50px;
         height: 50px;
-        top: -27px;
-        left: 125px;
+        top: 8px;
+        left: 24px;
 }
 
 main > section:first-child {
         margin-bottom: 100px;
 }
+
+img { 
+        margin-top: 40px;
+}
+
 /*--------------------------------------------------------------
     5.0 - OBJECTS
 -------------------------------------------------------------- */
-
 
 /* ----- FRAMEWORK ----- */
 
@@ -268,8 +243,87 @@ main > section:first-child {
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
 
+
 #optimized-hosting div ul {
         margin-bottom: 75px;
+        width: 500px;
+}
+
+#our-benefits {
+        background-color: #51CCF6;
+        margin-bottom: 100px;
+}
+
+#our-hosting {
+        background-color: #FE8360;
+}
+
+#our-benefits h1,
+#our-hosting h1 {
+        margin-top: 0;
+}
+
+#our-benefits h1,
+#our-hosting h1 {
+        padding: 200px 0 50px 0;
+}
+
+#optimized-hosting span {
+        color: #3F3C45;
+        text-transform: uppercase;
+}
+
+#optimized-hosting h2 {
+        text-transform: uppercase;
+}
+
+.header-style h2 {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #3F3C45;
+        margin-bottom: 10px;
+        font-weight: 700;
+}
+
+.header-style {
+        width: 310px;
+}
+
+/* ----- HERO ----- */
+
+#home-page {
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background: url("../img/bg-laptop.jpg") no-repeat center;
+        background-size: cover;
+        padding: 300px 0 0;
+        margin-bottom: 120px;
+}
+
+#home-page p {
+        text-align: center;
+        line-height: 60px;
+}
+
+#home-page p:last-child {
+        color: #ffff;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 37px;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-bottom: 114px;
+        padding-top: 34px;
+}
+
+#home-page span {
+        font-size: 30px;
+        font-weight: 300;
+        margin-top: 0;
+        padding-bottom: 130px;
 }
 
 /* ----- FORMS ----- */
@@ -283,35 +337,51 @@ form div {
 .bg-gray {
         background-color: #E7F5F8;
         padding: 25px 0;
+        margin-bottom: 100px;
 }
 
 input {
-        width: 400px;
+        width: 325px;
+        padding: 10px;
+        border: 1px solid #3F3C45;
+        margin-left: 50px;
 }
 
 #year {
         width: 190px;
+        padding: 10px;
+        border: 1px solid #3F3C45;
+        color: #3F3C45;
+        background-color: #ffff;
 }
 
 #website-type {
         width: 190px;
+        padding: 10px;
+        border: 1px solid #3F3C45;
+        color: #4D515C;
+        background-color: #ffff;
 }
 
 button[type=search] {
         background-color: #FE8360;
-        font-family: 'Lato', 'Arial', sans-serif;
-        font-weight: 700;
         padding: 15px 25px 15px 25px;
-        text-decoration: none;
-        margin: 10px 0;
-        color: #ffff;
         border: none;
-        text-transform: uppercase;
 }
 
 input:focus {
         outline: 0;
         border: 1px #FE8360 solid;
+}
+
+form a {
+        width: 100px;
+        padding: 0;
+        margin: 0;
+}
+
+form div:last-child {
+        margin-bottom: 5px;
 }
 
 /* ----- TABLES ----- */
@@ -325,13 +395,44 @@ table {
 td {
         font-size: 16px;
         font-family: 'Source Sans Pro', 'Arial', sans-serif;
-        color: #3F3C45;
-        padding: 10px;
+        color: #4D515C;
+        padding: 20px;
         text-align: center;
-        border: 1px solid #4D515C;
+        border: 1px solid #B6BCC7;
 }
 
-caption {
+th {
+        border: 1px solid #B6BCC7;
+}
+
+thead tr:first-child ::first-letter {
+        font-size: 75px;
+        font-weight: 200;
+        font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+thead tr:first-child {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 25px;
+}
+
+tr span {
+        text-transform: uppercase;
+        font-size: 65px;
+        font-weight: 700;
+        font-family: 'Source Sans Pro', Arial, sans-serif;
+        color:#4D515C;
+}
+
+tfoot a {
+        background-color: #FE8360;
+        width: 200px;
+        margin-top: 25px;
+}
+
+caption,
+label {
         position: absolute;
         position: absolute !important;
         width: 1px !important;
@@ -344,48 +445,49 @@ caption {
         border: 0 !important;
 }
 
-/* ----- BUTTONS ----- */
+thead tr:last-child th {
+        background-color:#51CCF6;
+        color: #ffff;
+        padding: 10px;
+        text-transform: uppercase;
+}
+/* ----- ANCHORS ----- */
 
-.btn {
+a {
         background-color: #FE8360;
-        font-family: 'Lato', 'Arial', sans-serif;
         font-weight: 700;
         padding: 15px;
         text-decoration: none;
-        margin: 10px 0;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        color: #ffff;
+        display: inline-block;
 }
 
-
-/* ----- HERO ----- */
-
-#home-page  > div:last-child {
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        -o-background-size: cover;
-        -ms-background-size: cover;
-        background: url("../img/bg-laptop.jpg") no-repeat center;
-        background-size: cover;
-        padding: 300px 0 0;
-        margin-bottom: 120px;
-}
-
-#home-page p {
-        text-align: center;
-}
-
-#our-benefits > div:last-child {
+a:hover {
         background-color: #51CCF6;
-        margin-bottom: 100px;
 }
 
-#our-hosting > div:last-child {
-        background-color: #FE8360;
+header p a {
+        background-color: #ffff;
+        color: #0000;
+        text-transform: lowercase;
+        color: #3F3C45;
+        font-weight: 400;
+        text-align: right;
+        padding: 5px;
 }
 
-#our-benefits h1,
-#our-hosting h1 {
-        padding: 200px 0 25px 0;
+header p a:hover {
+        background-color: #ffff;
+        color: #FE8360;
 }
+
+header p:first-child {
+        margin-top: 35px;
+        text-align: right;
+}
+
 
 /* ----- ICONS ----- */
 
