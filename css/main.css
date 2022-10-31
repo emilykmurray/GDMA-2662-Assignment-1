@@ -125,7 +125,9 @@ footer h3,
 table tr:nth-child(2) span,
 tr span,
 a,
-.btn {
+.btn,
+button:hover,
+button {
         font-weight: 700;
 }
 
@@ -141,7 +143,9 @@ footer h3,
 table tr:nth-child(2) span,
 thead tr:first-child,
 tr span,
-.btn  {
+.btn,
+button:hover,
+button {
         text-transform: uppercase;
 }
 
@@ -153,7 +157,9 @@ a,
 footer b,
 footer a:hover,
 table tr:nth-child(2) span,
-.btn {
+.btn,
+button:hover,
+button {
         color: #fff;
 }
 
@@ -170,9 +176,7 @@ header p a,
 #optimized-hosting h2,
 .header-style h2,
 .bg-gray h2,
-.bg-gray span,
-#year,
-#website-type {
+.bg-gray span {
         color: #3F3C45;
 }
 
@@ -202,7 +206,8 @@ button[type=search] {
 
 a:hover,
 #our-benefits,
-table tr:nth-child(2) span {
+table tr:nth-child(2) span,
+button:hover {
         background-color: #51CCF6;
 }
 
@@ -317,6 +322,10 @@ img {
 }
 
 .header-style {
+        width: 300px;
+}
+
+.header-style div:last-child {
         width: 300px;
 }
 
@@ -481,6 +490,14 @@ button[type=search] {
         border: none;
 }
 
+select:required:invalid { 
+        color: rgba(63, 60, 69, 0.5);
+}
+
+/* select {
+        color: rgba(63, 60, 69, 0.5);
+} */
+
 
 /* ----- TABLES ----- */
 
@@ -583,6 +600,8 @@ header p:first-child {
 .fa-certificate {
         font-size: 50px;
         margin: 20px 50px 0 0;
+        width: 50px;
+        height: 50px;
 }
 
 .fa-magnifying-glass {
