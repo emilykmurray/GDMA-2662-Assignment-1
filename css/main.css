@@ -9,10 +9,18 @@
         - Universal
 4.0 - Elements: styling for bare/generic HTML elements 
         - Typography: Headings, Paragraphs, Blockquotes, Anchors
+        - Lists
+        - Images
 5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
         - Framework
 6.0 - Components: specific designed components
         - Hero
+        - Navigation
+        - Footer 
+        - Forms
+        - Tables
+        - Anchors
+        - Images
 7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class   
 --------------------------------------------------------------*/
 
@@ -28,7 +36,6 @@
 /* ----------- UNIVERSAL ------------- */
 
 * {
-        font-family: 'Open Sans', 'Arial', sans-serif;
         -moz-box-sizing: border-box;
         -o-box-sizing: border-box;
         -ms-box-sizing: border-box;
@@ -40,58 +47,177 @@
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
 
+h1,
+.bg-gray h2,
+#home-page p:last-child,
+form a {
+        margin: 0;
+        
+}
+
+nav ul,
+footer a,
+footer a:hover,
+form a {
+        padding: 0;
+}
+
 
 /* ----- TYPOGRAPHY ----- */
 
+*,
+table,
+thead tr:first-child ::first-letter,
+tr span {
+        font-family: 'Source Sans Pro', 'Arial', sans-serif;
+}
+
+p,
+table,
+table tr:nth-child(2) span,
+.btn {
+        font-size: 16px;
+}
+
+h2 span,
+.header-style h2,
+footer h3  {
+        font-size: 18px;
+}
+
+span,
+#home-page span {
+        font-size: 30px;
+}
+
+#optimized-hosting h2,
+.bg-gray h2{
+        font-size: 35px;
+}
+
+h1,
+#home-page p:last-child {
+        font-size: 50px;
+}
+
+thead tr:first-child ::first-letter,
+tr span {
+        font-size: 75px;
+}
+
+span,
+#home-page span  {
+        font-weight: 300;
+}
+
+footer a,
+thead tr:first-child th,
+header p a {
+        font-weight: 400;
+}
+
+h1,
+footer h3,
+#optimized-hosting h2,
+.header-style h2,
+.bg-gray h2,
+#home-page p:last-child,
+table tr:nth-child(2) span,
+tr span,
+a,
+.btn {
+        font-weight: 700;
+}
+
 h1,
 h1 + p,
+a,
 footer h3,
-.btn {
+#optimized-hosting span,
+#optimized-hosting h2,
+.header-style h2,
+.bg-gray h2,
+#home-page p:last-child,
+table tr:nth-child(2) span,
+thead tr:first-child,
+tr span,
+.btn  {
         text-transform: uppercase;
 }
 
 h1,
 h1 + p,
 footer h3,
-span,
+a,
+#home-page p:last-child,
+footer b,
+footer a:hover,
+table tr:nth-child(2) span,
 .btn {
-        color: #ffff;
+        color: #fff;
 }
 
-h1,
-footer h3,
-.btn {
-        font-weight: 700;
+#website-type,
+#year,
+header p a,
+header p a:hover  {
+        background-color: #fff;
 }
 
 p,
-.btn {
-        font-size: 16px;
+header p a,
+#optimized-hosting span,
+#optimized-hosting h2,
+.header-style h2,
+.bg-gray h2,
+.bg-gray span,
+#year,
+#website-type {
+        color: #3F3C45;
+}
+
+footer section:nth-child(2) li:nth-child(2) a:hover,
+header p a:hover,
+.fa-compass-drafting,
+.fa-pen-to-square,
+.fa-champagne-glasses,
+.fa-cloud,
+.fa-comment,
+.fa-laptop,
+.fa-gear,
+.fa-envelope,
+.fa-lock,
+.fa-certificate,
+.fa-magnifying-glass {
+        color: #FE8360;
+}
+
+a,
+tfoot a,
+#our-hosting,
+nav ul,
+button[type=search] {
+        background-color: #FE8360;
+}
+
+a:hover,
+#our-benefits,
+table tr:nth-child(2) span {
+        background-color: #51CCF6;
+}
+
+table,
+#home-page p {
+        text-align: center;
 }
 
 p {
-        color: #3F3C45;
         line-height: 25px;
-        margin-top: 0px;
-}
-
-h1 {
-        font-size: 50px;
-        line-height: 63px;
-        margin-bottom: 0;
         margin-top: 0;
 }
 
-span {
-        font-weight: 300;
-}
-
-h2 span {
-        font-size: 18px;
-}
-
-footer span {
-        font-weight: 600;
+h1 {
+        line-height: 55px;
 }
 
 
@@ -102,126 +228,16 @@ ul {
 }
 
 li {
-                line-height: 25px;
+        line-height: 25px;
 }
 
-/* ----- NAVIGATION ----- */
-
-nav {
-        margin-top: 20px;
-        width: 295px;
-}
-
-nav ul {
-        padding: 0;
-        background-color: #FE8360;
-        margin-bottom: 0;
-        margin-top: 0;
-        padding-bottom: 0;
-        width: 295px;
-}
-
-nav li {
-        display: inline-block;
-}
-
-
-/* ----- FOOTER ----- */
-
-footer {
-        background-color: #4D515C;
-        margin-top: 75px;
-        padding-bottom: 35px;
-}
-
-footer h3 {
-        margin-bottom: 15px;
-        margin-top: 75px;
-        font-size: 18px;
-}
-
-footer a {
-        color: #B6BCC7;
-        font-size: 14px;
-        text-transform: none;
-        background-color: #4D515C;
-        padding: 0;
-        font-weight: 400;
-}
-
-footer a:hover {
-        color: #ffff;
-        padding: 0;
-        background-color: #4D515C;
-}
-
-footer li {
-        list-style-type: none;
-        margin-top: 0;
-        margin-bottom: 10px;
-        line-height: 21px;
-}
-
-footer ul {
-        padding-left: 0;
-        margin-top: 0;
-}
-
-footer div {
-        display: flex;
-        justify-content: flex-start;
-}
-
-footer div section {
-        margin-right: 50px;
-}
-
-footer section:last-child li {
-        display: inline-block;
-}
-
-footer section:nth-child(2) li:nth-child(2) a:hover {
-        color: #FE8360;
-}
-
-footer div section:first-child > h3:first-child {
-        margin-bottom: 25px;
-}
-
-footer ul:last-child a:hover {
-        color: #ffff;
-}
 
 /* ----- IMAGES ----- */
 
-#optimized-hosting > div:last-child {
-        background: url("../img/typing.jpg") no-repeat right 53px;
-        background-size: auto;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        -o-background-size: cover;
-        -ms-background-size: cover;
-        background-size: cover;
-        height: 380px;
-        width: 600px;
-        margin-right: 100px;
-}
-
-.relative {
-        position: relative;
-        width: 50px;
-        height: 50px;
-        top: 8px;
-        left: 24px;
-}
-
-main > section:first-child {
-        margin-bottom: 100px;
-}
-
 img { 
-        margin-top: 40px;
+        margin-top: 50px;
 }
+
 
 /*--------------------------------------------------------------
     5.0 - OBJECTS
@@ -239,23 +255,51 @@ img {
         justify-content: space-between;
 }
 
+
 /*--------------------------------------------------------------
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
 
+#optimized-hosting > div:last-child {
+        background: url("../img/typing.jpg") no-repeat right 20px;
+        background-size: auto;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+        height: 395px;
+        width: 600px;
+        margin-left: 50px;   
+}
 
-#optimized-hosting div ul {
+.relative {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        top: -25px;
+        left: 76px;
+}
+
+/* main > section:first-child {
+        margin-bottom: 25px;
+} */
+
+#optimized-hosting div:first-child {
         margin-bottom: 75px;
-        width: 500px;
+        width: 850px;
+}
+
+#optimized-hosting h2 {
+        line-height: 27px;
+}
+
+#optimized-hosting ul {
+        margin-bottom: 40px;
 }
 
 #our-benefits {
-        background-color: #51CCF6;
         margin-bottom: 100px;
-}
-
-#our-hosting {
-        background-color: #FE8360;
 }
 
 #our-benefits h1,
@@ -265,28 +309,19 @@ img {
 
 #our-benefits h1,
 #our-hosting h1 {
-        padding: 200px 0 50px 0;
-}
-
-#optimized-hosting span {
-        color: #3F3C45;
-        text-transform: uppercase;
-}
-
-#optimized-hosting h2 {
-        text-transform: uppercase;
+        padding: 125px 0 50px 0;
 }
 
 .header-style h2 {
-        font-size: 18px;
-        text-transform: uppercase;
-        color: #3F3C45;
         margin-bottom: 10px;
-        font-weight: 700;
 }
 
 .header-style {
-        width: 310px;
+        width: 300px;
+}
+
+.bg-gray h2 {
+        line-height: 27px;
 }
 
 /* ----- HERO ----- */
@@ -303,70 +338,125 @@ img {
 }
 
 #home-page p {
-        text-align: center;
         line-height: 60px;
 }
 
 #home-page p:last-child {
-        color: #ffff;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 37px;
-        margin-bottom: 0;
-        margin-top: 0;
-        padding-bottom: 114px;
-        padding-top: 34px;
+        line-height: 35px;
+        padding: 29px 0 115px;
 }
 
 #home-page span {
-        font-size: 30px;
-        font-weight: 300;
         margin-top: 0;
         padding-bottom: 130px;
 }
 
-/* ----- FORMS ----- */
 
+/* ----- NAVIGATION ----- */
 
-form div {
-        padding-top: 39px;
-        padding-left: 20px;
+nav {
+        margin-top: 20px;
+        width: 295px;
 }
+
+nav ul {
+        width: 273px;
+        margin: 0 0 0 20px;
+}
+
+nav li,
+footer section:last-child li,
+a {
+        display: inline-block;
+}
+
+
+/* ----- FOOTER ----- */
+
+footer,
+footer a,
+footer a:hover {
+        background-color: #4D515C;
+}
+
+footer a,
+footer b,
+footer span {
+        font-size: 14px;
+}
+
+footer {
+        margin-top: 75px;
+        padding-bottom: 35px;
+}
+
+footer b {
+        font-weight: 600;
+}
+
+footer ul {
+        padding-left: 0;
+        margin-top: 0;
+}
+
+footer li {
+        list-style-type: none;
+        line-height: 21px;
+        margin: 0 0 3px;
+}
+
+footer h3 {
+        margin: 50px 0 10px;
+}
+
+footer a {
+        color: #B6BCC7;
+        text-transform: none;
+}
+
+footer div {
+        display: flex;
+        justify-content: flex-start;
+}
+
+footer div section {
+        margin-right: 50px;
+}
+
+footer section:first-child h3 {
+        margin-bottom: 20px;
+}
+
+footer span {
+        margin-right: 30px;
+}
+
+
+/* ----- FORMS ----- */
 
 .bg-gray {
         background-color: #E7F5F8;
-        padding: 25px 0;
+        padding: 50px 0;
         margin-bottom: 100px;
 }
 
+form div {
+        padding: 40px 0 0 20px;
+}
+
+form a {
+        width: 100px;
+}
+
+form div:last-child {
+        margin-bottom: 10px;
+}
+
 input {
-        width: 325px;
+        width: 260px;
         padding: 10px;
         border: 1px solid #3F3C45;
         margin-left: 50px;
-}
-
-#year {
-        width: 190px;
-        padding: 10px;
-        border: 1px solid #3F3C45;
-        color: #3F3C45;
-        background-color: #ffff;
-}
-
-#website-type {
-        width: 190px;
-        padding: 10px;
-        border: 1px solid #3F3C45;
-        color: #4D515C;
-        background-color: #ffff;
-}
-
-button[type=search] {
-        background-color: #FE8360;
-        padding: 15px 25px 15px 25px;
-        border: none;
 }
 
 input:focus {
@@ -374,59 +464,69 @@ input:focus {
         border: 1px #FE8360 solid;
 }
 
-form a {
-        width: 100px;
-        padding: 0;
-        margin: 0;
+#year {
+        width: 150px;
+        padding: 10px;
+        border: 1px solid #3F3C45;
 }
 
-form div:last-child {
-        margin-bottom: 5px;
+#website-type {
+        width: 150px;
+        padding: 10px;
+        border: 1px solid #3F3C45;
 }
+
+button[type=search] {
+        padding: 13px 25px 13px 25px;
+        border: none;
+}
+
 
 /* ----- TABLES ----- */
+
+th, 
+td {
+        border-right: 1px solid #B6BCC7;
+        padding: 20px;
+}
 
 table {
         margin: 0 auto;
         margin-top: 50px;
         border-collapse: collapse;
-}
-
-td {
-        font-size: 16px;
-        font-family: 'Source Sans Pro', 'Arial', sans-serif;
+        border: 1px solid #B6BCC7;
         color: #4D515C;
-        padding: 20px;
-        text-align: center;
-        border: 1px solid #B6BCC7;
 }
 
-th {
-        border: 1px solid #B6BCC7;
+table tr:nth-child(2) span {
+        padding: 10px 50px;
+}
+
+table tr:nth-child(2) {
+        padding-bottom: 35px;
+}
+
+tbody tr {
+        border-bottom: 1px solid #B6BCC7;
+}
+
+tbody tr:last-child {
+        border-bottom: none;
 }
 
 thead tr:first-child ::first-letter {
-        font-size: 75px;
         font-weight: 200;
-        font-family: 'Source Sans Pro', Arial, sans-serif;
 }
 
-thead tr:first-child {
-        text-transform: uppercase;
-        font-weight: 300;
+thead tr:first-child th {
         font-size: 25px;
 }
 
 tr span {
-        text-transform: uppercase;
-        font-size: 65px;
-        font-weight: 700;
-        font-family: 'Source Sans Pro', Arial, sans-serif;
         color:#4D515C;
 }
 
 tfoot a {
-        background-color: #FE8360;
         width: 200px;
         margin-top: 25px;
 }
@@ -445,62 +545,31 @@ label {
         border: 0 !important;
 }
 
-thead tr:last-child th {
-        background-color:#51CCF6;
-        color: #ffff;
-        padding: 10px;
-        text-transform: uppercase;
-}
+
 /* ----- ANCHORS ----- */
 
-a {
-        background-color: #FE8360;
-        font-weight: 700;
-        padding: 15px;
-        text-decoration: none;
-        margin-bottom: 0;
-        text-transform: uppercase;
-        color: #ffff;
-        display: inline-block;
+header p a,
+header p:first-child {
+        text-align: right;
 }
 
-a:hover {
-        background-color: #51CCF6;
+a {
+        padding: 15px;
+        margin-bottom: 0;
+        text-decoration: none;
 }
 
 header p a {
-        background-color: #ffff;
-        color: #0000;
         text-transform: lowercase;
-        color: #3F3C45;
-        font-weight: 400;
-        text-align: right;
         padding: 5px;
 }
 
-header p a:hover {
-        background-color: #ffff;
-        color: #FE8360;
-}
-
 header p:first-child {
-        margin-top: 35px;
-        text-align: right;
+        margin-top: 40px;
 }
 
 
 /* ----- ICONS ----- */
-
-
-.fa-facebook-f,
-.fa-instagram,
-.fa-twitter,
-.fa-linkedin-in {
-        color: #B6BCC7;
-        font-size: 14px;
-        font-weight: 400;
-        margin-right: 30px;
-}
 
 .fa-compass-drafting,
 .fa-pen-to-square,
@@ -513,16 +582,13 @@ header p:first-child {
 .fa-lock,
 .fa-certificate {
         font-size: 50px;
-        color: #FE8360;
         margin: 20px 50px 0 0;
 }
 
 .fa-magnifying-glass {
-        color: #FE8360;
+        font-weight: 900;
 }
-
 
 /*--------------------------------------------------------------
     7.0 - UTILITIES
 -------------------------------------------------------------- */
-
