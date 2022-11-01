@@ -200,7 +200,7 @@ a,
 tfoot a,
 #our-hosting,
 nav ul,
-button[type=search] {
+button {
         background-color: #FE8360;
 }
 
@@ -485,7 +485,7 @@ input:focus {
         border: 1px solid #3F3C45;
 }
 
-button[type=search] {
+button {
         padding: 13px 25px 13px 25px;
         border: none;
 }
